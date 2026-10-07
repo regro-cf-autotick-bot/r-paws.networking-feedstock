@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `r-paws.networking` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install r-paws.networking
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install r-paws.networking
 ```
 
-It is possible to list all of the versions of `r-paws.networking` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add r-paws.networking
+# for installing globally
+pixi global install r-paws.networking
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `r-paws.networking` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search r-paws.networking --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search r-paws.networking --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search r-paws.networking --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds r-paws.networking --channel conda-forge
 # List dependencies of `r-paws.networking`:
 mamba repoquery depends r-paws.networking --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
