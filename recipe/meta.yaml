@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/paws.networking_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/paws.networking/paws.networking_{{ version }}.tar.gz
-  sha256: 28d81a767f96a107165ccb158c42d05ed2894e7c43f8eded00fef9afc0a4d911
+  sha256: f77a2f84c114a49ff481b65f51c171177021e3abad4993957a7d90463acf59d9
 
 build:
   number: 0
